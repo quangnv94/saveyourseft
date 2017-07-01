@@ -1,5 +1,7 @@
 package com.androidtutorialpoint.mynavigationdrawer;
 
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -8,6 +10,8 @@ import android.content.IntentFilter;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.media.MediaPlayer;
+import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -21,6 +25,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.NotificationCompat;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -75,6 +80,8 @@ public class MainActivity extends AppCompatActivity implements DialogEnterContac
     private ImageView profile_image;
     FirebaseStorage storage = FirebaseStorage.getInstance();
     StorageReference storageRef;
+    private Intent intent;
+    private MediaPlayer mp;
 
     private static int REQUEST_CODE_SOME_FEATURES_PERMISSIONS = 999;
 
@@ -125,6 +132,37 @@ public class MainActivity extends AppCompatActivity implements DialogEnterContac
         storageRef = storage.getReferenceFromUrl("gs://saveyoufelffinal.appspot.com").child(token + "ava.png");
         getAva();
 
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        sendNotification();
+    }
+
+    public void sendNotification() {
+
+        Intent intent = new Intent(this, MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        Bundle bundle = new Bundle();
+        bundle.putString("nq", "abc");
+        intent.putExtra("typelogin", bundle);
+        PendingIntent pendingIntent = PendingIntent.getActivity(this, 1, intent,
+                PendingIntent.FLAG_ONE_SHOT);
+
+        Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+        android.support.v4.app.NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this)
+                .setSmallIcon(R.drawable.logo)
+                .setContentTitle(getString(R.string.app_name))
+                .setContentText("Chọn để mở app nhanh và gửi cảnh báo")
+                .setAutoCancel(true)
+                .setSound(defaultSoundUri)
+                .setContentIntent(pendingIntent);
+
+        NotificationManager notificationManager =
+                (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+
+        notificationManager.notify(1 /* ID of notification */, notificationBuilder.build());
     }
 
     private void sendSms(String phonenumber, String message) {

@@ -1,49 +1,29 @@
 package com.androidtutorialpoint.mynavigationdrawer.fragment;
 
 
-import android.app.AlertDialog;
-import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.text.Editable;
-import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.EditText;
-import android.widget.Filter;
 import android.widget.ListView;
-import android.widget.SearchView;
-import android.widget.Toast;
 
 import com.androidtutorialpoint.mynavigationdrawer.ContactsModel;
-import com.androidtutorialpoint.mynavigationdrawer.LoginActivity;
-import com.androidtutorialpoint.mynavigationdrawer.MainActivity;
 import com.androidtutorialpoint.mynavigationdrawer.MyArrayAdapter;
 import com.androidtutorialpoint.mynavigationdrawer.MyDatabaseHelper;
 import com.androidtutorialpoint.mynavigationdrawer.R;
-import com.androidtutorialpoint.mynavigationdrawer.common.AppContanst;
-import com.libre.mylibs.MyUtils;
 
-import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-
-import android.database.sqlite.SQLiteDatabase;
 
 
 /**
@@ -72,6 +52,7 @@ public class ContactFragment extends Fragment {
         databaseHelperb = new MyDatabaseHelper(getActivity().getApplicationContext());
         databaseHelperb.createDefaultContactsIfNeed();
         list = databaseHelperb.getAllContacts();
+        Log.d("nguyendangquang0", list.size() + "");
         //// create adapter
         adapter = new MyArrayAdapter(getActivity().getApplicationContext(), this.listContacts);
         this.listContacts.addAll(list);
@@ -153,11 +134,13 @@ public class ContactFragment extends Fragment {
         MyDatabaseHelper db = new MyDatabaseHelper(getActivity().getApplicationContext());
         db.deleteContact(contactsModel);
         list = databaseHelperb.getAllContacts();
+        adapter = new MyArrayAdapter(getActivity().getApplicationContext(), this.listContacts);
+        listView.setAdapter(adapter);
 
 //        this.listContacts.remove(contactsModel);
 //
 //        // Refresh ListView.
-            adapter.notifyDataSetChanged();
+        adapter.notifyDataSetChanged();
         listView.requestFocus();
     }
 
