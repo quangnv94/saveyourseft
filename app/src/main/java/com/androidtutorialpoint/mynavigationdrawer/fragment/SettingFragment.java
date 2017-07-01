@@ -7,18 +7,15 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.provider.SyncStateContract;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
-import android.util.Base64;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -38,8 +35,6 @@ import com.libre.mylibs.MyUtils;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -63,7 +58,7 @@ public class SettingFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         Log.d("nguyendasdasd", MyUtils.getStringData(getContext(),
                 AppContanst.TOKEN));
-        storageReference = storage.getReferenceFromUrl("gs://saveyoufelffinal.appspot.com").child(MyUtils.getStringData(getContext(),
+        storageReference = storage.getReferenceFromUrl("gs://saveyouselffinal.appspot.com").child(MyUtils.getStringData(getContext(),
                 AppContanst.TOKEN)
                 + "ava.png");
 

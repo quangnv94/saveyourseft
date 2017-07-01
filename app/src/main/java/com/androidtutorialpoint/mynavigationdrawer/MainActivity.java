@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity implements DialogEnterContac
             CURRENT_TAG = TAG_HOME;
         }
         token = MyUtils.getStringData(getApplicationContext(), AppContanst.TOKEN);
-        storageRef = storage.getReferenceFromUrl("gs://saveyoufelffinal.appspot.com").child(token + "ava.png");
+        storageRef = storage.getReferenceFromUrl("gs://saveyouselffinal.appspot.com").child(token + "ava.png");
         getAva();
 
     }
@@ -343,7 +343,7 @@ public class MainActivity extends AppCompatActivity implements DialogEnterContac
         builder.setPositiveButton("Thôi", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                Toast.makeText(MainActivity.this, "Không thoát được", Toast.LENGTH_SHORT).show();
+              //  Toast.makeText(MainActivity.this, "Không thoát được", Toast.LENGTH_SHORT).show();
             }
         });
         builder.setNegativeButton("Đăng xuất", new DialogInterface.OnClickListener() {

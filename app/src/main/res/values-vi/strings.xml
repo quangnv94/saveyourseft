@@ -73,4 +73,5 @@
 
     <string name="location">Vị trí hiện tại của bạn</string>
     <string name="seebymap">Trên GoogleMap</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

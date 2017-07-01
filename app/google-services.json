@@ -1,35 +1,35 @@
 {
   "project_info": {
-    "project_number": "909327817413",
-    "firebase_url": "https://saveyoufelffinal.firebaseio.com",
-    "project_id": "saveyoufelffinal",
-    "storage_bucket": "saveyoufelffinal.appspot.com"
+    "project_number": "93871151221",
+    "firebase_url": "https://saveyouselffinal.firebaseio.com",
+    "project_id": "saveyouselffinal",
+    "storage_bucket": "saveyouselffinal.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:909327817413:android:74c9bf433f101c3a",
+        "mobilesdk_app_id": "1:93871151221:android:23caeb044ef48451",
         "android_client_info": {
-          "package_name": "com.androidtutorialpoint.mynavigationdrawer"
+          "package_name": "com.saveyourself.app.huynhly"
         }
       },
       "oauth_client": [
         {
-          "client_id": "909327817413-j5cmo3asun97n8iu3a322hv9d7p3svq8.apps.googleusercontent.com",
+          "client_id": "93871151221-jl48hqkbh2e6aulv5pgttujfgnquao52.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.androidtutorialpoint.mynavigationdrawer",
+            "package_name": "com.saveyourself.app.huynhly",
             "certificate_hash": "c0978ec8fbc9898f759d9b809df525609ded3fa0"
           }
         },
         {
-          "client_id": "909327817413-jnhvce55q7fptq8a6q42a5aa8k68erbq.apps.googleusercontent.com",
+          "client_id": "93871151221-8rtqtf77qgapp42o3ou23svund032a8g.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCjJDhzgxTfd5d2cvCgOOkytZoieUfRxvQ"
+          "current_key": "AIzaSyCPR7l2HSoIsi4RXl8luuNQnBvGSNoHb7I"
         }
       ],
       "services": {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "909327817413-jnhvce55q7fptq8a6q42a5aa8k68erbq.apps.googleusercontent.com",
+              "client_id": "93871151221-8rtqtf77qgapp42o3ou23svund032a8g.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
