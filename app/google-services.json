@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "909327817413",
+    "firebase_url": "https://saveyoufelffinal.firebaseio.com",
+    "project_id": "saveyoufelffinal",
+    "storage_bucket": "saveyoufelffinal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909327817413:android:74c9bf433f101c3a",
+        "android_client_info": {
+          "package_name": "com.androidtutorialpoint.mynavigationdrawer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "909327817413-j5cmo3asun97n8iu3a322hv9d7p3svq8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.androidtutorialpoint.mynavigationdrawer",
+            "certificate_hash": "c0978ec8fbc9898f759d9b809df525609ded3fa0"
+          }
+        },
+        {
+          "client_id": "909327817413-jnhvce55q7fptq8a6q42a5aa8k68erbq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjJDhzgxTfd5d2cvCgOOkytZoieUfRxvQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "909327817413-jnhvce55q7fptq8a6q42a5aa8k68erbq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

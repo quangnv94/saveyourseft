@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">SaveYourSelf</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Cài đặt</string>
+
+    <!--navigation bar item-->
+    <string name="home">Trang chủ</string>
+    <string name="contacts">Danh bạ</string>
+    <string name="locationOfMine">Vị trí của bạn</string>
+    <string name="account">Tài khoản</string>
+    <string name="help">Trợ giúp</string>
+    <string name="setting">Cài đặt</string>
+    <string name="about_us">Thông tin chúng tôi</string>
+    <string name="privacy">Luật và chính sách</string>
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Trang chủ</item>
+        <item>Danh bạ</item>
+        <item>Vị trí của bạn bè</item>
+        <item>Tài khoản</item>
+        <item>Trợ giúp</item>
+        <item>Cài đặt</item>
+        <item>Thông tin chúng tôi</item>
+        <item>Luật và chính sách</item>
+    </string-array>
+    <!--action toobar-->
+    <string name="action_logout">Đăng xuất</string>
+    <!--value each screen-->
+    <string name="phoneNumber">Phone Number</string>
+    <string name="mail">Email</string>
+    <string name="passowrd">Mật khẩu</string>
+    <string name="login">ĐĂNG NHẬP</string>
+    <string name="show_pwd">Hiển thị Mật khẩu</string>
+    <string name="hide_pwd">Ẩn mật khẩu</string>
+    <string name="forgot">Quên mật khẩu?</string>
+    <string name="closebutton">Close Button for Activity</string>
+    <string name="newUser">Chưa là thành viên. Đăng kí</string>
+    <string name="confirmPassword">Xác nhận mật khẩu</string>
+    <string name="terms_conditions">Tôi đồng ý với chính sách và điểu khoản của ứng dụng</string>
+    <string name="signUp">ĐĂNG KÍ</string>
+    <string name="already_user">Đã có tài khoản. Đăng nhập.</string>
+    <!--ForgotPassword-->
+    <string name="registered_phone">Điền địa chỉ Email:</string>
+    <string name="submit">GỬI</string>
+    <string name="back">TRỞ VỀ</string>
+    <string name="helpContent">Ứng dụng của chúng tôi được thiết kế để hỗ trợ người dùng khi họ đang gặp nguy hiểm. Khi gặp nguy hiểm, người dùng nhấn nút SOS. Ứng dụng này phát ra âm thanh thông báo và gửi tin nhắn văn bản tới những người thân yêu qua số điện thoại bạn đã lưu trữ trong ứng dụng.</string>
+    <string name="aboutUsContent">“Nếu các người thành tâm muôn biết,thì chúng tôi sẵn lòng trả lời.Để đề phòng thế giới bị phá hoại, để bảo vệ nền hòa bình thế giới.Chúng tôi đại diện cho những nhân vật phản diện, đầy khả ái và ngây ngất lòng người. </string>
+    <!--/////////-->
+    <string name="minimum_password">Password is too short. Please enter password minimum 6 characters</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+    <string name="policyContent">Phần mềm này đã được chúng tôi quản lý. Khi mỗi khách hàng truy cập vào SaveYourSelf,nó sẽ tự động lưu địa chỉ IP cùng với tên miền. Chúng tôi cũng sử dụng các công cụ kiểm tra. Một tài khoản sẽ lưu trữ dữ liệu mà server của website gửi đến khi bạn truy cập vào phầm mềm việc sử dụng chức năng này sẽ giúp chúng tôi hỗ trợ và tìm hiểu nhu cầu, thị hiếu của khách hàng khi truy cập vào phầm mềm của chúng tôi.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="speech_prompt">Say something&#8230;</string>
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+    <string name="tap_on_mic">Tap on mic to speak</string>
+    <!--///////////-->
+    <string name="deleteTitle">Xóa</string>
+    <string name="deleteMessage">Bạn có muốn xóa số điện thoại này không?</string>
+    <string name="cancel">Thôi</string>
+    <string name="update">Cập nhật</string>
+    <string name="headerTitle">Lựa chọn hành động bạn muốn: </string>
+    <string name="editTitle">Chỉnh sửa</string>
+
+    <string name="nameContact">Họ và tên</string>
+    <string name="phoneContact">Số điện thoại</string>
+
+    <string name="search">Tìm kiếm</string>
+
+    <string name="location">Vị trí hiện tại của bạn</string>
+    <string name="seebymap">Trên GoogleMap</string>
+</resources>

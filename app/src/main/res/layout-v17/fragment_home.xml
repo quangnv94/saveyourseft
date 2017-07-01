@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".fragment.HomeFragment">
+
+    <TextClock
+        android:id="@+id/textClock"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:format12Hour="hh:mm:ss a"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorAccent"
+        android:textSize="44sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:background="@drawable/button_bg_round"
+        android:text="SOS"
+        android:textColor="#ffffff"
+        android:textSize="100dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/textViewTenThanhPho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Tp Ho Chi Minh"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewNgay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="T2, 00/00"
+            android:textColor="@color/colorAccent"
+            android:layout_below="@+id/textViewTenThanhPho"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textViewNhietDoHienTai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textViewTenThanhPho"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="55dp"
+            android:layout_marginRight="55dp"
+            android:text="00*C"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewNhietDoCaoNhat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textViewNhietDoHienTai"
+            android:layout_alignRight="@+id/textViewNhietDoHienTai"
+            android:layout_below="@+id/textViewNhietDoHienTai"
+            android:text="00"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/textViewDuDoan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0000000"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorAccent"
+            android:layout_below="@+id/textViewNhietDoHienTai"
+            android:layout_toLeftOf="@+id/textViewNhietDoHienTai"
+            android:layout_toStartOf="@+id/textViewNhietDoHienTai" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewNhietDoCaoNhat"
+
+
+            android:layout_alignBottom="@+id/textViewNhietDoCaoNhat"
+
+            android:layout_toLeftOf="@+id/textViewNhietDoCaoNhat"
+            android:layout_toStartOf="@+id/textViewNhietDoCaoNhat"
+            android:text="-"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/textViewNhietDoThapNhat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewNhietDoHienTai"
+            android:layout_toLeftOf="@+id/textView35"
+            android:layout_toStartOf="@+id/textView35"
+            android:text="00"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/textViewTrangThai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textViewDuDoan"
+            android:layout_alignLeft="@+id/textViewDuDoan"
+            android:layout_alignStart="@+id/textViewDuDoan"
+            android:layout_toLeftOf="@+id/textViewNhietDoHienTai"
+            android:text="000"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textViewNhietDoCaoNhat"
+            android:layout_alignTop="@+id/textViewNhietDoHienTai"
+            android:layout_toEndOf="@+id/textViewNhietDoCaoNhat"
+            android:layout_toRightOf="@+id/textViewNhietDoCaoNhat"
+            android:adjustViewBounds="false"
+            android:background="@drawable/bg_layout_border"
+
+            android:contentDescription="@string/about_us"
+            android:cropToPadding="false"
+            android:scaleType="matrix"
+            android:src="@drawable/andy"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgShow"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:visibility="invisible" />
+</LinearLayout>

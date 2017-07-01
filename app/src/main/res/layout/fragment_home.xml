@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    tools:context=".fragment.HomeFragment">
+
+    <TextClock
+        android:id="@+id/textClock"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:format12Hour="hh:mm:ss a"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        tools:targetApi="jelly_bean_mr1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp">
+
+        <Button
+            android:id="@+id/btnSos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button_bg_round"
+            android:text="SOS"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="100dp" />
+    </LinearLayout>
+
+</LinearLayout>

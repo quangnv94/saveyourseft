@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "782215667315",
+    "firebase_url": "https://mynavigationdrawer-d55d9.firebaseio.com",
+    "project_id": "mynavigationdrawer-d55d9",
+    "storage_bucket": "mynavigationdrawer-d55d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:782215667315:android:74c9bf433f101c3a",
+        "android_client_info": {
+          "package_name": "com.androidtutorialpoint.mynavigationdrawer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "782215667315-1kqq5mpq6qiuu83gvfdgt77dgi4dqga6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeLSrCd_KnAIEKDj5nZedbQPCzvKlYG2o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">SaveYourSelf</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <!--navigation bar item-->
+    <string name="home">Home</string>
+    <string name="contacts">Contacts</string>
+    <string name="locationOfMine">Location Of Mine</string>
+    <string name="account">Account</string>
+    <string name="help">Help</string>
+    <string name="setting">Setting</string>
+    <string name="about_us">About Us</string>
+    <string name="privacy">Privacy Policy</string>
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>Contacts</item>
+        <item>My Location</item>
+        <item>Help</item>
+        <item>Setting</item>
+        <item>About Us</item>
+        <item>Privacy Policy</item>
+    </string-array>
+    <!--action toobar-->
+    <string name="action_logout">Log Out</string>
+    <!--value each screen-->
+    <string name="phoneNumber">Phone Number</string>
+    <string name="mail">Email</string>
+    <string name="passowrd">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="show_pwd">Show Password</string>
+    <string name="hide_pwd">Hide Password</string>
+    <string name="forgot">Forgot password?</string>
+    <string name="closebutton">Close Button for Activity</string>
+    <string name="newUser">Not a Member yet? Sign Up here.</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="terms_conditions">By clicking SignUp you agree all the Terms and Conditions.</string>
+    <string name="signUp">SIGN UP</string>
+    <string name="already_user">Already have Account? Login here.</string>
+    <!--ForgotPassword-->
+    <string name="registered_phone">Please enter your Email below:</string>
+    <string name="submit">SUBMIT</string>
+    <string name="back">BACK</string>
+    <string name="helpContent">Our application is designed to assist users when they are in danger. When in danger, the user presses the SOS button. This app emits a notification sound and sends a text message about the danger of counting loved ones through the phone number you have stored in the app.</string>
+    <string name="aboutUsContent">If people want to know, we will answer. To prevent the world from being damaged, to safeguard world in peace. We represent the wicked, full of love and kind.</string>
+    <!--/////////-->
+    <string name="minimum_password">Password is too short. Please enter password minimum 6 characters</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+    <string name="policyContent">This software was managed by us. When each customer accesses SaveYourSelf, it will automatically save the IP address along with the domain. We also use testing tools. An account will store the data that the server of the website sent to when you access the software using this function will help us support and understand the needs and tastes of customers when accessing the software ours.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <!--////////////////////-->
+    <string name="deleteTitle">Delete</string>
+    <string name="deleteMessage">Are you sure to delete this contact?</string>
+    <string name="cancel">Cancel</string>
+    
+    <string name="update">Update</string>
+    <string name="headerTitle">Select action, please!</string>
+    
+    <string name="editTitle">Edit Contacts</string>
+
+    <string name="nameContact"> Name</string>
+    <string name="phoneContact">Phone </string>
+    <string name="search">Search</string>
+    <string name="location">My location</string>
+    <string name="seebymap">See by map</string>
+</resources>
